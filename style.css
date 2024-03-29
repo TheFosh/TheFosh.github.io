@@ -7,11 +7,15 @@
     scroll-behavior: smooth;
 }
 
+.bounding_box_test{
+    border: solid red 2px;
+}
+
 :root{
     --bg-color: #222831;
-    --text-color:  #EEEEEE;
+    --text-color:  #31363F;
     --main-color: #76ABAE;
-    --box-color: #31363F;
+    --box-color: #EEEEEE;
 }
 
 html{
@@ -58,18 +62,39 @@ section{
     padding: 10rem 9% 2rem;
 }
 
-section div{
-    margin: auto; 
-    padding-left: 2em;
-    padding-right: 2em;
-    justify-content: space-between;
-    background-color:var(--main-color);
+.home{
+    padding: 0 9%;
 }
 
-.home{
+.home-content{
+    margin: 2em;
+    margin-top: 10em;
+    padding:2em;
+    background-color:var(--box-color);
     display: flex;
-    align-items: center;
-    padding: 0 9%;
+    justify-content: space-between;
+}
+
+.home-text{
+    width: 65%;
+    padding-right: 1em;
+    text-align: left;
+}
+
+.home-text h1{
+    font-size: 2.5em;
+}
+
+.home-text p{
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.face_photo{
+    width: 100%;
+    max-width: 16em;
+    height: auto;
+    border-radius: 50%;
 }
 
 .subHeading{

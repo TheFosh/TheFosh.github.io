@@ -15,7 +15,8 @@
     --bg-color: #222831;
     --text-color:  #31363F;
     --main-color: #76ABAE;
-    --box-color: #EEEEEE;
+    --box1-color: #EEEEEE;
+    --box2-color: #EAEAEA;
 }
 
 html{
@@ -70,7 +71,7 @@ section{
     margin: 2em;
     margin-top: 10em;
     padding:2em;
-    background-color:var(--box-color);
+    background-color:var(--box1-color);
     display: flex;
     justify-content: space-between;
 }

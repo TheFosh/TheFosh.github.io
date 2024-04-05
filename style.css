@@ -7,13 +7,14 @@
     scroll-behavior: smooth;
 }
 
-.bounding_box_test{
+.test{
     border: solid red 2px;
 }
 
 :root{
     --bg-color: #222831;
     --text-color:  #31363F;
+    --contrast-color: #FFFFFF;
     --main-color: #76ABAE;
     --box1-color: #EEEEEE;
     --box2-color: #EAEAEA;
@@ -55,7 +56,7 @@ body {
 }
 
 .navbar a:hover{
-    color:var(--text-color);
+    color:var(--contrast-color);
 }
 
 section{
@@ -96,6 +97,24 @@ section{
     max-width: 16em;
     height: auto;
     border-radius: 50%;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    background-color:var(--box2-color);
+}
+
+.contact-header{
+    font-size: 1.2em;
+    color:var(--main-color);
+    font-weight: 600;
+}
+
+.contact-info a{
+    padding: 2em;
 }
 
 .subHeading{

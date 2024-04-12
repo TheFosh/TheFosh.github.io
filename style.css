@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
@@ -12,12 +12,13 @@
 }
 
 :root{
-    --bg-color: #222831;
-    --text-color:  #31363F;
-    --contrast-color: #FFFFFF;
+    --bg-color1: #222831;
+    --bg-color2: #375b6d;
+    --text-color1:  #9BB0C1;
+    --text-color2: #41C9E2;
+    --header-color: #FFFFFF;
     --main-color: #76ABAE;
     --box1-color: #EEEEEE;
-    --box2-color: #EAEAEA;
 }
 
 html{
@@ -25,8 +26,8 @@ html{
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg-color1);
+    color: var(--text-color1);
 }
 
 .header{
@@ -34,7 +35,7 @@ body {
     position: fixed;
     width: 100%;
     padding: 2em;
-    background-color: transparent;
+    background-color: var(--box1-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,63 +49,91 @@ body {
 }
 
 .navbar a{
-    font-size: 1em;
     color:var(--main-color);
     font-weight: 500;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 30em;
     margin-left: 3.5em;
     transition: 0.3s;
 }
 
 .navbar a:hover{
-    color:var(--contrast-color);
+    color: #FFFFFF;
+    background: var(--bg-color2);
 }
 
 section{
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    min-height: 50vh;
 }
 
 .home{
-    padding: 0 9%;
+    padding: 0 2em;
 }
 
 .home-content{
-    margin: 2em;
     margin-top: 10em;
-    padding:2em;
-    background-color:var(--box1-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .home-text{
+    padding-top: 2em;
     width: 65%;
-    padding-right: 1em;
     text-align: left;
+    font-size: 1.5em;
+}
+
+h1{
+    font-size: 2em;
 }
 
 .home-text h1{
-    font-size: 2.5em;
-}
-
-.home-text p{
-    padding: 1em;
-    font-size: 1.2em;
+    font-size: 2.3em;
+    color:var(--header-color);
 }
 
 .face_photo{
     width: 100%;
-    max-width: 16em;
+    max-width: 20em;
     height: auto;
     border-radius: 50%;
 }
 
+.class{
+    margin-top: 2em;
+    background-color:var(--bg-color2);
+}
+
+.class-header{
+    padding-top: 1em;
+    text-align: center;
+    color: var(--header-color);
+}
+
+.class-content{
+    text-align: left;
+    padding: 1.5em;
+    display: flex;
+}
+
+.class-content div{
+    width: 50%;
+}
+
+.class-text a{
+    font-size: 2em;
+    padding: 0.5em;
+    color: var(--text-color2);
+}
+
 .contacts{
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2em;
-    background-color:var(--box2-color);
+    background-color:var(--box1-color);
 }
 
 .contact-header{

@@ -14,6 +14,7 @@
 :root{
     --bg-color1: #222831;
     --bg-color2: #375b6d;
+    --bg-color3: #2b4b52;
     --text-color1:  #9BB0C1;
     --text-color2: #41C9E2;
     --header-color: #FFFFFF;
@@ -63,8 +64,25 @@ body {
     background: var(--bg-color2);
 }
 
+h2{
+    font-size: 2em;
+    padding-top: 1em;
+    text-align: center;
+    color: var(--header-color);
+}
+
 section{
     min-height: 50vh;
+}
+
+section a{
+    font-size: 2em;
+    padding: 0.5em;
+    color: var(--text-color2);
+}
+
+section p{
+    font-size: 1.4rem;
 }
 
 .home{
@@ -82,10 +100,6 @@ section{
     width: 65%;
     text-align: left;
     font-size: 1.5em;
-}
-
-h1{
-    font-size: 2em;
 }
 
 .home-text h1{
@@ -121,10 +135,12 @@ h1{
     width: 50%;
 }
 
-.class-text a{
-    font-size: 2em;
-    padding: 0.5em;
-    color: var(--text-color2);
+.experience{
+    background-color:var(--bg-color3);
+}
+
+.experience-content p{
+    padding-left: 3em;
 }
 
 .contacts{
@@ -144,9 +160,4 @@ h1{
 
 .contact-info a{
     padding: 2em;
-}
-
-.subHeading{
-    font-size:25px; 
-    color: #41C9E2;
 }

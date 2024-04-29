@@ -139,8 +139,24 @@ section p{
     background-color:var(--bg-color3);
 }
 
+.experience-content{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
 .experience-content p{
     padding-left: 3em;
+}
+
+.experience-extras{
+    padding-right: 3em;
+}
+
+.experienceDiagram {
+    width: 20em;
+    border-radius: 50%;
+    
 }
 
 .contacts{

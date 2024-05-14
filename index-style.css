@@ -75,7 +75,7 @@ section{
     min-height: 50vh;
 }
 
-section a{
+section h3{
     font-size: 2em;
     padding: 0.5em;
     color: var(--text-color2);
@@ -143,6 +143,8 @@ section p{
     display: flex;
     justify-content: space-between;
     padding-bottom: 2em;
+    font-size: 1.4em;
+    color: var(--text-color1);
 }
 
 .experience-content p{

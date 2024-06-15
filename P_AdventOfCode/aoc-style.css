@@ -22,6 +22,7 @@ body {
 
 section {
     padding: 3em;
+    ;
 }
 
 .line{
@@ -42,20 +43,26 @@ section {
     justify-content: center;
 }
 
-section h2 {
+.days *{
+    padding: 0.5em;
+}
+
+.days h2 {
     font-size: 2em;
     color: var(--header-color);
 }
 
-section h3 {
+.days h3 {
     color: var(--subHeader-color);
 
     padding-left: 2em;
 }
 
 .days span, div, ul {
-    padding-left: 3em;
+    padding-left: 2em;
 }
+
+
 
 /* Look into making this work
 .days{

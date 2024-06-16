@@ -34,7 +34,9 @@ section {
 }
 
 .backButton{
-    z-index: 100;
+    position: absolute;
+    z-index: index -1;
+    width: 50%;
 }
 
 .logo{

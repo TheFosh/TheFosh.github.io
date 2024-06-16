@@ -12,7 +12,6 @@
     --header-color: rgb(255, 225, 58);
     --subHeader-color: #2ab917;
     --text-color: #ffffff86;
-
 }
 
 body {
@@ -22,43 +21,48 @@ body {
 
 section {
     padding: 3em;
-    ;
 }
 
 .line{
-    margin: 0 2em;
     border: dotted;
 }
 
 .intro h1{
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
     color: var(--header-color);
+}
+
+.backButton{
+    z-index: 100;
 }
 
 .logo{
     display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
+}
+
+.logo img{
+    align-self: center;
 }
 
 .days *{
-    padding: 0.5em;
+    padding: 0.3em;
 }
 
 .days h2 {
+    padding-bottom: 1em;
     font-size: 2em;
     color: var(--header-color);
 }
 
 .days h3 {
     color: var(--subHeader-color);
-
-    padding-left: 2em;
 }
 
-.days span, div, ul {
+.description{
     padding-left: 2em;
 }
 

@@ -27,6 +27,10 @@ section {
     border: dotted;
 }
 
+.intro {
+    text-align: center;
+}
+
 .intro h1{
     text-align: center;
     font-size: 2.5em;
@@ -36,7 +40,8 @@ section {
 .backButton{
     position: absolute;
     z-index: index -1;
-    width: 50%;
+    top: 1em;
+    left: 1em;
 }
 
 .logo{

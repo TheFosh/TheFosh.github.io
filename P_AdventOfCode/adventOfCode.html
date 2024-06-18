@@ -37,12 +37,34 @@
         <div class="code-content">
             <h3>Highlighted Code</h3>
             <div class="problem-code">
-                <p>
+                <p class="display-code">
+                    <a class="code-statement">int</a><a class="function-statement">Inventory::getLastNum</a>(string _line_) {
+
+                        <a class="code-statement">int</a>firstNum =<a class="code-variable">-1</a>;
+                        char tmpChar;
                     
-                </p>
-                <p>
+                        for (int i = index; i < _line_.size(); ++i) {
+                            <a class="code-comment">// Checks if current char is in the range 0-9.</a>
+                            <a class="code-comment">// If yes, it converts it to an int.</a>
+                            tmpChar = _line_[i];
+                            if (tmpChar >= '0' && tmpChar <= '9') {
+                                firstNum = tmpChar - '0';
+                            }
                     
+                            // PART 2
+                            for (int w = 0; w < wordSize; ++w) {
+                                if (_line_.rfind(numWords[w]) == i) {
+                                    firstNum = w;
+                                }
+                            }
+                        }
+                    
+                        return firstNum;
+                    }
                 </p>
+                <span class="description">
+                    
+                </span>
             </div>
         </div>
 

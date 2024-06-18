@@ -9,9 +9,15 @@
 
 :root{
     --bg-color: #0F0F22;
+    --code-bg-color: #171726;
     --header-color: rgb(255, 225, 58);
     --subHeader-color: #2ab917;
     --text-color: #ffffff86;
+    --code-color: #ffffffc7;
+    --weighted-c-color: #c93434;
+    --function-c-color: #ca3acfc0;
+    --variable-c-color: #2189c1;
+    --comment-c-color: #5d5d5d;
 }
 
 body {
@@ -73,7 +79,27 @@ section {
     padding-left: 2em;
 }
 
+.display-code{
+    white-space-collapse: preserve;
+    background-color: var(--code-bg-color);
+    color: var(--code-color);
+}
 
+.code-statement{
+    color: var(--weighted-c-color);
+}
+
+.function-statement{
+    color:var(--function-c-color);
+}
+
+.code-variable{
+    color: var(--variable-c-color);
+}
+
+.code-comment{
+    color:var(--comment-c-color);
+}
 
 /* Look into making this work
 .days{

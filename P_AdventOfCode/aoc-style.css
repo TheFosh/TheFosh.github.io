@@ -80,9 +80,13 @@ section {
 }
 
 .display-code{
-    white-space-collapse: preserve;
+    white-space-collapse:preserve;
     background-color: var(--code-bg-color);
     color: var(--code-color);
+}
+
+.display-code a{
+    padding: 0;
 }
 
 .code-statement{

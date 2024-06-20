@@ -92,7 +92,39 @@
         <div class="code-content">
             <h3>Highlighted Code</h3>
             <div class="problem-code">
-                Code
+                <p class="display-code">
+                    const Game Game::operator=(const Game& rhs) {
+                        if (this != &rhs) 
+                        {
+                            delete[] red;
+                            delete[] blue;
+                            delete[] green;
+                    
+                            arraySize = rhs.arraySize;
+                    
+                            red = new int[rhs.arraySize];
+                            for (int i = 0; i < rhs.arraySize; ++i) {
+                                red[i] = rhs.red[i];
+                            }
+                    
+                            blue = new int[rhs.arraySize];
+                            for (int i = 0; i < rhs.arraySize; ++i) {
+                                blue[i] = rhs.blue[i];
+                            }
+                    
+                            green = new int[rhs.arraySize];
+                            for (int i = 0; i < rhs.arraySize; ++i) {
+                                green[i] = rhs.green[i];
+                            }
+                        }
+                    
+                        return *this;
+                    }
+                </p>
+
+                <p class="description">
+
+                </p>
             </div>
         </div>
 
@@ -121,7 +153,18 @@
         <div class="code-content">
             <h3>Highlighted Code</h3>
             <div class="problem-code">
-                Code
+                <p class="display-code">
+                    int Board::getNum(int row, int col) {
+	
+                        if (col - 1 == -1 || !isNum(row, col -1))
+                            return createNum(0, row, col);
+                    
+                        return getNum(row, col - 1);
+                    }
+                </p>
+                <p class="description">
+                    
+                </p>
             </div>
         </div>
         
@@ -149,7 +192,26 @@
         <div class="code-content">
             <h3>Highlighted Code</h3>
             <div class="problem-code">
-                Code
+                <p class="display-code">
+                    int Inventory::recursiveCounting(list&lt;Card&gt;::iterator itr, int total) {
+
+                        int count = (*itr).countPairs();// Count of current card
+                    
+                        // Goes through each iterator after the current one based on the count above
+                        for (int i = 0; i < count; ++i) {
+                            ++itr;
+                    
+                            // Sets the total count to the number of times this method is recursevly called
+                            // This in effect counts the number of copies of a card
+                            total = recursiveCounting(itr, ++total);
+                        }
+                    
+                        return total;
+                    }
+                </p>
+                <p class="description">
+
+                </p>
             </div>
         </div> 
         

@@ -93,32 +93,32 @@
             <h3>Highlighted Code</h3>
             <div class="problem-code">
                 <p class="display-code">
-                    const Game Game::operator=(const Game& rhs) {
-                        if (this != &rhs) 
+                    <a class="code-statement">const</a> Game Game::<a class="code-statement">operator</a>=(<a class="code-statement">const</a> Game& rhs) {
+                        <a class="code-statement">if</a> (<a class="code-variable">this</a> != &rhs) 
                         {
-                            delete[] red;
-                            delete[] blue;
-                            delete[] green;
+                            <a class="code-statement">delete[]</a> red;
+                            <a class="code-statement">delete[]</a> blue;
+                            <a class="code-statement">delete[]</a> green;
                     
                             arraySize = rhs.arraySize;
                     
-                            red = new int[rhs.arraySize];
-                            for (int i = 0; i < rhs.arraySize; ++i) {
+                            red = <a class="code-statement">new int</a>[rhs.arraySize];
+                            <a class="code-statement">for</a> (int i = <a class="code-variable">0</a>; i < rhs.arraySize; ++i) {
                                 red[i] = rhs.red[i];
                             }
                     
-                            blue = new int[rhs.arraySize];
-                            for (int i = 0; i < rhs.arraySize; ++i) {
+                            blue = <a class="code-statement">new int</a>[rhs.arraySize];
+                            <a class="code-statement">for</a> (int i = <a class="code-variable">0</a>; i < rhs.arraySize; ++i) {
                                 blue[i] = rhs.blue[i];
                             }
                     
-                            green = new int[rhs.arraySize];
-                            for (int i = 0; i < rhs.arraySize; ++i) {
+                            green = <a class="code-statement">new int</a>[rhs.arraySize];
+                            <a class="code-statement">for</a> (int i = <a class="code-variable">0</a>; i < rhs.arraySize; ++i) {
                                 green[i] = rhs.green[i];
                             }
                         }
                     
-                        return *this;
+                        <a class="code-statement">return</a> *<a class="code-variable">this</a>;
                     }
                 </p>
 
@@ -154,12 +154,12 @@
             <h3>Highlighted Code</h3>
             <div class="problem-code">
                 <p class="display-code">
-                    int Board::getNum(int row, int col) {
+                    <a class="code-statement">int</a> <a class="function-statement">Board::getNum</a>(<a class="code-statement">int</a> row, <a class="code-statement">int</a> col) {
 	
-                        if (col - 1 == -1 || !isNum(row, col -1))
-                            return createNum(0, row, col);
+                        <a class="code-statement">if</a> (col - <a class="code-variable">1</a> == -<a class="code-variable">1</a> || !<a class="code-variable">isNum</a>(row, col -<a class="code-variable">1</a>))
+                            <a class="code-statement">return</a> <a class="code-variable">createNum</a>(<a class="code-variable">0</a>, row, col);
                     
-                        return getNum(row, col - 1);
+                        <a class="code-statement">return</a> <a class="code-variable">getNum</a>(row, col - <a class="code-variable">1</a>);
                     }
                 </p>
                 <p class="description">
@@ -193,20 +193,20 @@
             <h3>Highlighted Code</h3>
             <div class="problem-code">
                 <p class="display-code">
-                    int Inventory::recursiveCounting(list&lt;Card&gt;::iterator itr, int total) {
+                    <a class="code-statement">int</a> <a class="function-statement">Inventory::recursiveCounting</a>(list&lt;Card&gt;::iterator itr, <a class="code-statement">int</a> total) {
 
-                        int count = (*itr).countPairs();// Count of current card
+                        <a class="code-statement">int</a> count = (*itr).<a class="code-variable">countPairs</a>();<a class="code-comment">// Count of current card</a>
                     
-                        // Goes through each iterator after the current one based on the count above
-                        for (int i = 0; i < count; ++i) {
+                        <a class="code-comment">// Goes through each iterator after the current one based on the count above</a>
+                        <a class="code-statement">for</a> (<a class="code-statement">int</a> i = <a class="code-variable">0</a>; i < count; ++i) {
                             ++itr;
                     
-                            // Sets the total count to the number of times this method is recursevly called
-                            // This in effect counts the number of copies of a card
-                            total = recursiveCounting(itr, ++total);
+                            <a class="code-comment">// Sets the total count to the number of times this method is recursevly called</a>
+                            <a class="code-comment">// This in effect counts the number of copies of a card</a>
+                            total = <a class="code-variable">recursiveCounting</a>(itr, ++total);
                         }
                     
-                        return total;
+                        <a class="code-statement">return</a> total;
                     }
                 </p>
                 <p class="description">

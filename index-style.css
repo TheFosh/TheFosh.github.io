@@ -126,29 +126,30 @@ section p{
     color: var(--header-color);
 }
 
-.class-content{
-    text-align: left;
-    padding: 1em;
+.class-text{
     display: flex;
-    
+    justify-content: space-between;
+}
+
+.class-text div{
+    padding: 0 1em;
+    max-width: 33%;
 }
 
 .class-text p{
     font-size: 0.9em;
+    text-align: left;
 }
 
-.class-extras {
-    padding-left: 2.5em;
+.class-extras{
+    display: flex;
+    justify-content: center;
 }
 
 .school_photo {
     width: 100%;
-    max-width: 30em;
+    max-width: 20em;
     height: auto;
-}
-
-.class-content div{
-    width: 50%;
 }
 
 .experience{
@@ -180,7 +181,6 @@ section p{
     max-width: 25em;
     height: auto;
     border-radius: 50%;
-    
 }
 
 .contacts{
